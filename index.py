@@ -12,7 +12,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return render_template('main.html')
+	return render_template('main.html')
 @app.route('/sss',methods=["POST"])
 def sss():
 	url = request.form["url"]
