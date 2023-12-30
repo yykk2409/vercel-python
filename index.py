@@ -17,6 +17,6 @@ def sss():
     with YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=False)
     audio_data = info['url']
-    """options = [audio_data, "-n", "htdemucs", "--two-stems", "vocals", "--mp3"]
-    demucs.separate.main(options)"""
+    options = [audio_data, "-n", "htdemucs", "--two-stems", "vocals", "--mp3"]
+    demucs.separate.main(options)
     return render_template('main.html')
