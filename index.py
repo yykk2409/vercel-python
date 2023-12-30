@@ -19,8 +19,7 @@ def sss():
 	print(url)
 	ydl_opts = {'format': 'bestaudio','outtmpl': 'sound.mp3'}
 	with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    info = ydl.extract_info(url, download=False) 
-# 音声データを変数に格納
+		info = ydl.extract_info(url, download=False) 
 	audio_data = info['url'] 
 """	options = [audio_data,"-n","htdemucs", "--two-stems","vocals","--mp3"]
 	demucs.separate.main(options)"""
