@@ -1,18 +1,18 @@
 from flask import Flask, request, render_template, redirect
-#from flask_cors import CORS
+from flask_cors import CORS
 #from yt_dlp import YoutubeDL
 #import demucs.separate
 
 app = Flask(__name__)
 #CORS(app)
-@app.route("/")
-def hello_world():
-   return "<p>Hello, World!</p>"
+#@app.route("/")
+#def hello_world():
+#   return "<p>Hello, World!</p>"
 
 
-#@app.route('/')
-#def index():
-#    return render_template('main.html')
+@app.route('/')
+def index():
+    return render_template('main.html')
 """@app.route('/sss',methods=["POST"])
 def sss():
 	url = request.form["url"]
